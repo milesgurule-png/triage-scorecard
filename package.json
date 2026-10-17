@@ -3,10 +3,36 @@
   "version": "0.1.0",
   "description": "How good is your vulnerability triage? Score any prioritization method against real CISA KEV and FIRST EPSS data, with no future data.",
   "type": "module",
-  "bin": { "triage-scorecard": "src/cli.js" },
-  "scripts": { "test": "node --test", "score": "node src/cli.js" },
-  "engines": { "node": ">=18" },
-  "keywords": ["vulnerability-management", "cve", "epss", "kev", "cisa", "prioritization", "security", "triage"],
+  "bin": {
+    "triage-scorecard": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "score": "node src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "vulnerability-management",
+    "cve",
+    "epss",
+    "kev",
+    "cisa",
+    "prioritization",
+    "security",
+    "triage"
+  ],
   "author": "Miles Gurule",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milesgurule-png/triage-scorecard"
+  }
 }
