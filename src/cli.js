@@ -6,6 +6,7 @@ import { pathToFileURL } from 'node:url';
 import { loadKev } from './data.js';
 import { scorecard, BUILTIN } from './score.js';
 import { markdown } from './report.js';
+import { chart } from './chart.js';
 
 const HELP = `Usage: triage-scorecard [options]
 
@@ -21,6 +22,7 @@ const HELP = `Usage: triage-scorecard [options]
   --epss-dir DIR    read epss_scores-YYYY-MM-DD.csv.gz from here first
   --kev FILE        use a local KEV JSON instead of downloading
   --json FILE       also write the full result as JSON
+  --chart FILE      also write an SVG line chart of daily flagged CVEs
 `;
 
 function args(argv) {
@@ -28,6 +30,11 @@ function args(argv) {
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '-h' || a === '--help') o.help = true;
+    else if (a === '--chart') {
+      const file = argv[++i];
+      if (!file || file.startsWith('--')) throw new Error('--chart requires an output file');
+      o.chart = file;
+    }
     else if (a.startsWith('--')) o[a.slice(2)] = argv[++i];
   }
   return o;
@@ -66,3 +73,4 @@ const result = await scorecard({ start, end: endDate, kev, filters, cohort, opts
 process.stderr.write('\n');
 process.stdout.write(markdown(result, { cohort: cohort ? `${cohort.size} CVEs from ${o.cves}` : 'every CVE with an EPSS score' }));
 if (o.json) writeFileSync(o.json, JSON.stringify(result, null, 2));
+if (o.chart) writeFileSync(o.chart, chart(result));

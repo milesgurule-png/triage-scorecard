@@ -50,9 +50,16 @@ Every CVE with an EPSS score (~375,000 a day). Reproduce with `npx github:milesg
 ```bash
 npx github:milesgurule-png/triage-scorecard                 # last 30 days, built-in filters
 npx github:milesgurule-png/triage-scorecard --days 60 --json result.json
+npx github:milesgurule-png/triage-scorecard --days 60 --chart chart.svg --json result.json
 ```
 
 Node 18+, no dependencies. Data downloads once into `.cache/` (each EPSS day is about 2 MB).
+
+`--chart FILE` also writes a standalone SVG line chart of daily flagged CVEs for
+every selected filter (including your custom filter or `--flags` input). Open it
+in a browser or embed it in a report. The chart uses the same `daily` counts as
+the JSON output, on one shared, zero-based vertical scale; it does not change
+the Markdown report printed to the terminal. The output directory must exist.
 
 ## Score your own tool
 
