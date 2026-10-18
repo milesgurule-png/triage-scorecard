@@ -6,6 +6,27 @@
 
 Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This tool shows what that rule actually costs you: how many alerts a day, how many known-exploited vulnerabilities it misses, and whether it warns you *before* a CVE is exploited.
 
+<!-- kev-watch:start -->
+## 🔴 KEV Watch (updates daily)
+
+**6 of 9** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
+
+| Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
+|---|---|---|---:|---:|:---:|
+| 2026-10-16 | [CVE-2025-61624](https://nvd.nist.gov/vuln/detail/CVE-2025-61624) | Fortinet Multiple Products | 0.005 | 43.8% | ❌ missed |
+| 2026-10-16 | [CVE-2026-102764](https://nvd.nist.gov/vuln/detail/CVE-2026-102764) | BeyondTrust Remote Support | not scored | – | – |
+| 2026-10-15 | [CVE-2026-21589](https://nvd.nist.gov/vuln/detail/CVE-2026-21589) | Atlassian Multiple Products | 0.028 | 86.1% | ❌ missed |
+| 2026-10-14 | [CVE-2026-0322](https://nvd.nist.gov/vuln/detail/CVE-2026-0322) | Palo Alto Networks PAN-OS | not scored | – | – |
+| 2026-10-14 | [CVE-2026-105133](https://nvd.nist.gov/vuln/detail/CVE-2026-105133) | Ahsay AhsayCBS | 0.004 | 30.5% | ❌ missed |
+| 2026-10-14 | [CVE-2026-105134](https://nvd.nist.gov/vuln/detail/CVE-2026-105134) | Ahsay AhsayCBS | 0.018 | 78.5% | ❌ missed |
+| 2026-10-14 | [CVE-2026-76519](https://nvd.nist.gov/vuln/detail/CVE-2026-76519) | Cisco Secure Email Gateway | not scored | – | – |
+| 2026-10-13 | [CVE-2026-104935](https://nvd.nist.gov/vuln/detail/CVE-2026-104935) | Ivanti Connect Secure | not scored | – | – |
+
+"Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
+
+Updated 2026-10-18 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
+<!-- kev-watch:end -->
+
 ## Results: 60 real days (Aug 17 – Oct 15, 2026)
 
 Every CVE with an EPSS score (~375,000 a day). Reproduce with `npx github:milesgurule-png/triage-scorecard --days 60 --end 2026-10-15`.

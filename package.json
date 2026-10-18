@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "node --test",
-    "score": "node src/cli.js"
+    "score": "node src/cli.js",
+    "kev-watch": "node scripts/kev-watch.mjs"
   },
   "engines": {
     "node": ">=18"
