@@ -4,6 +4,8 @@
 
 [![test](https://github.com/milesgurule-png/triage-scorecard/actions/workflows/test.yml/badge.svg)](https://github.com/milesgurule-png/triage-scorecard/actions/workflows/test.yml) ![license](https://img.shields.io/badge/license-MIT-green) ![node](https://img.shields.io/badge/node-%3E%3D18-blue) ![deps](https://img.shields.io/badge/dependencies-0-brightgreen)
 
+![triage-scorecard scoring 14 real days of KEV + EPSS data](docs/demo.gif)
+
 Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This tool shows what that rule actually costs you: how many alerts a day, how many known-exploited vulnerabilities it misses, and whether it warns you *before* a CVE is exploited.
 
 <!-- kev-watch:start -->
