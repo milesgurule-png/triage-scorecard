@@ -26,7 +26,7 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-10-19 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
+Updated 2026-10-20 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
 <!-- kev-watch:end -->
 
 ## Results: 60 real days (Aug 17 – Oct 15, 2026)
