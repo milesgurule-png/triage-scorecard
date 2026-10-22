@@ -11,7 +11,7 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 <!-- kev-watch:start -->
 ## 🔴 KEV Watch (updates daily)
 
-**12 of 15** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
+**10 of 10** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
@@ -26,7 +26,7 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-10-21 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
+Updated 2026-10-22 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
 <!-- kev-watch:end -->
 
 ## Results: 60 real days (Aug 17 – Oct 15, 2026)
