@@ -15,6 +15,7 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
+| 2026-10-23 | [CVE-2026-114625](https://nvd.nist.gov/vuln/detail/CVE-2026-114625) | Arista VeloCloud Orchestrator | not scored | – | – |
 | 2026-10-20 | [CVE-2026-106931](https://nvd.nist.gov/vuln/detail/CVE-2026-106931) | EG Secure Solutions SiteGuard Server Edition | 0.007 | 50.7% | ❌ missed |
 | 2026-10-20 | [CVE-2026-110936](https://nvd.nist.gov/vuln/detail/CVE-2026-110936) | Siemens Software Center | 0.001 | 2.7% | ❌ missed |
 | 2026-10-20 | [CVE-2026-96652](https://nvd.nist.gov/vuln/detail/CVE-2026-96652) | Plex Media Server | 0.002 | 12.0% | ❌ missed |
@@ -22,11 +23,10 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 | 2026-10-20 | [CVE-2026-96655](https://nvd.nist.gov/vuln/detail/CVE-2026-96655) | Plex Media Server | 0.002 | 12.0% | ❌ missed |
 | 2026-10-20 | [CVE-2026-96656](https://nvd.nist.gov/vuln/detail/CVE-2026-96656) | Plex Media Server | 0.004 | 32.3% | ❌ missed |
 | 2026-10-16 | [CVE-2025-61624](https://nvd.nist.gov/vuln/detail/CVE-2025-61624) | Fortinet Multiple Products | 0.005 | 43.8% | ❌ missed |
-| 2026-10-16 | [CVE-2026-102764](https://nvd.nist.gov/vuln/detail/CVE-2026-102764) | BeyondTrust Remote Support | not scored | – | – |
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-10-22 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
+Updated 2026-10-23 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
 <!-- kev-watch:end -->
 
 ## Results: 60 real days (Aug 17 – Oct 15, 2026)
