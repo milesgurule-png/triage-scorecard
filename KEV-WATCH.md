@@ -2,10 +2,11 @@
 
 Every day, this repo checks what EPSS said about each newly confirmed exploited vulnerability **the day before** CISA added it to KEV.
 
-**10 of 10** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
+**11 of 11** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
+| 2026-10-23 | [CVE-2026-110447](https://nvd.nist.gov/vuln/detail/CVE-2026-110447) | Collabora Collabora Online – Built-in CODE Server | 0.012 | 68.6% | ❌ missed |
 | 2026-10-23 | [CVE-2026-114625](https://nvd.nist.gov/vuln/detail/CVE-2026-114625) | Arista VeloCloud Orchestrator | not scored | – | – |
 | 2026-10-20 | [CVE-2026-106931](https://nvd.nist.gov/vuln/detail/CVE-2026-106931) | EG Secure Solutions SiteGuard Server Edition | 0.007 | 50.7% | ❌ missed |
 | 2026-10-20 | [CVE-2026-110936](https://nvd.nist.gov/vuln/detail/CVE-2026-110936) | Siemens Software Center | 0.001 | 2.7% | ❌ missed |
@@ -25,4 +26,4 @@ Every day, this repo checks what EPSS said about each newly confirmed exploited 
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-10-23 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
+Updated 2026-10-24 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
