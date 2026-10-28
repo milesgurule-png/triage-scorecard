@@ -2,10 +2,12 @@
 
 Every day, this repo checks what EPSS said about each newly confirmed exploited vulnerability **the day before** CISA added it to KEV.
 
-**11 of 13** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
+**10 of 13** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
+| 2026-10-27 | [CVE-2026-111497](https://nvd.nist.gov/vuln/detail/CVE-2026-111497) | Google Brotli | 0.360 | 98.5% | ✅ flagged |
+| 2026-10-27 | [CVE-2026-48356](https://nvd.nist.gov/vuln/detail/CVE-2026-48356) | Adobe Commerce and Magento | 0.010 | 62.6% | ❌ missed |
 | 2026-10-26 | [CVE-2026-109618](https://nvd.nist.gov/vuln/detail/CVE-2026-109618) | PHP Group PHP | 1.000 | 100.0% | ✅ flagged |
 | 2026-10-26 | [CVE-2026-109619](https://nvd.nist.gov/vuln/detail/CVE-2026-109619) | PHP Group PHP | 1.000 | 100.0% | ✅ flagged |
 | 2026-10-23 | [CVE-2026-110447](https://nvd.nist.gov/vuln/detail/CVE-2026-110447) | Collabora Collabora Online – Built-in CODE Server | 0.012 | 68.6% | ❌ missed |
@@ -19,11 +21,7 @@ Every day, this repo checks what EPSS said about each newly confirmed exploited 
 | 2026-10-16 | [CVE-2025-61624](https://nvd.nist.gov/vuln/detail/CVE-2025-61624) | Fortinet Multiple Products | 0.005 | 43.8% | ❌ missed |
 | 2026-10-16 | [CVE-2026-102764](https://nvd.nist.gov/vuln/detail/CVE-2026-102764) | BeyondTrust Remote Support | not scored | – | – |
 | 2026-10-15 | [CVE-2026-21589](https://nvd.nist.gov/vuln/detail/CVE-2026-21589) | Atlassian Multiple Products | 0.028 | 86.1% | ❌ missed |
-| 2026-10-14 | [CVE-2026-0322](https://nvd.nist.gov/vuln/detail/CVE-2026-0322) | Palo Alto Networks PAN-OS | not scored | – | – |
-| 2026-10-14 | [CVE-2026-105133](https://nvd.nist.gov/vuln/detail/CVE-2026-105133) | Ahsay AhsayCBS | 0.004 | 30.5% | ❌ missed |
-| 2026-10-14 | [CVE-2026-105134](https://nvd.nist.gov/vuln/detail/CVE-2026-105134) | Ahsay AhsayCBS | 0.018 | 78.5% | ❌ missed |
-| 2026-10-14 | [CVE-2026-76519](https://nvd.nist.gov/vuln/detail/CVE-2026-76519) | Cisco Secure Email Gateway | not scored | – | – |
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-10-27 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
+Updated 2026-10-28 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
