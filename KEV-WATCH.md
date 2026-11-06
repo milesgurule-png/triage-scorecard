@@ -2,7 +2,7 @@
 
 Every day, this repo checks what EPSS said about each newly confirmed exploited vulnerability **the day before** CISA added it to KEV.
 
-**6 of 11** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
+**5 of 10** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
@@ -18,9 +18,7 @@ Every day, this repo checks what EPSS said about each newly confirmed exploited 
 | 2026-10-27 | [CVE-2026-48356](https://nvd.nist.gov/vuln/detail/CVE-2026-48356) | Adobe Commerce and Magento | 0.010 | 62.6% | ❌ missed |
 | 2026-10-26 | [CVE-2026-109618](https://nvd.nist.gov/vuln/detail/CVE-2026-109618) | PHP Group PHP | 1.000 | 100.0% | ✅ flagged |
 | 2026-10-26 | [CVE-2026-109619](https://nvd.nist.gov/vuln/detail/CVE-2026-109619) | PHP Group PHP | 1.000 | 100.0% | ✅ flagged |
-| 2026-10-23 | [CVE-2026-110447](https://nvd.nist.gov/vuln/detail/CVE-2026-110447) | Collabora Collabora Online – Built-in CODE Server | 0.012 | 68.6% | ❌ missed |
-| 2026-10-23 | [CVE-2026-114625](https://nvd.nist.gov/vuln/detail/CVE-2026-114625) | Arista VeloCloud Orchestrator | not scored | – | – |
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-11-05 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
+Updated 2026-11-06 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
