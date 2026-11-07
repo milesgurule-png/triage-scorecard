@@ -15,6 +15,7 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
+| 2026-11-06 | [CVE-2026-19868](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) | SonicWall SonicOS SSLVPN | not scored | – | – |
 | 2026-11-04 | [CVE-2024-27834](https://nvd.nist.gov/vuln/detail/CVE-2024-27834) | Apple Multiple Products | 0.006 | 48.7% | ❌ missed |
 | 2026-11-03 | [CVE-2026-119977](https://nvd.nist.gov/vuln/detail/CVE-2026-119977) | WordPress WordPress Core | 0.006 | 48.7% | ❌ missed |
 | 2026-10-30 | [CVE-2026-111357](https://nvd.nist.gov/vuln/detail/CVE-2026-111357) | Ivanti Connect Secure | 0.002 | 16.0% | ❌ missed |
@@ -22,11 +23,10 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 | 2026-10-29 | [CVE-2026-76418](https://nvd.nist.gov/vuln/detail/CVE-2026-76418) | Cisco Secure Firewall ASA Software and Cisco Secure FTD Software | not scored | – | – |
 | 2026-10-29 | [CVE-2026-97229](https://nvd.nist.gov/vuln/detail/CVE-2026-97229) | GitLab Community Edition and Enterprise Edition | 0.184 | 97.2% | ✅ flagged |
 | 2026-10-28 | [CVE-2026-41709](https://nvd.nist.gov/vuln/detail/CVE-2026-41709) | Broadcom VMware ESX | 0.003 | 22.2% | ❌ missed |
-| 2026-10-28 | [CVE-2026-46300](https://nvd.nist.gov/vuln/detail/CVE-2026-46300) | Linux Kernel | 0.102 | 95.6% | ✅ flagged |
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-11-06 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
+Updated 2026-11-07 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
 <!-- kev-watch:end -->
 
 ## Results: 60 real days (Aug 17 – Oct 15, 2026)
