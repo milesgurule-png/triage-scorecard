@@ -2,10 +2,14 @@
 
 Every day, this repo checks what EPSS said about each newly confirmed exploited vulnerability **the day before** CISA added it to KEV.
 
-**13 of 14** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
+**16 of 17** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
+| 2026-11-20 | [CVE-2025-42884](https://nvd.nist.gov/vuln/detail/CVE-2025-42884) | SAP NetWeaver | 0.003 | 20.4% | ❌ missed |
+| 2026-11-20 | [CVE-2026-123890](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) | Broadcom VMware vCenter | not scored | – | – |
+| 2026-11-20 | [CVE-2026-129448](https://nvd.nist.gov/vuln/detail/CVE-2026-129448) | Apache Roller | 0.012 | 68.6% | ❌ missed |
+| 2026-11-20 | [CVE-2026-76466](https://nvd.nist.gov/vuln/detail/CVE-2026-76466) | Cisco Expressway Series | 0.004 | 36.7% | ❌ missed |
 | 2026-11-18 | [CVE-2024-10441](https://nvd.nist.gov/vuln/detail/CVE-2024-10441) | Synology DiskStation Manager (DSM) | 0.013 | 69.9% | ❌ missed |
 | 2026-11-18 | [CVE-2026-40217](https://nvd.nist.gov/vuln/detail/CVE-2026-40217) | BerriAI LiteLLM | 0.170 | 97.1% | ✅ flagged |
 | 2026-11-18 | [CVE-2026-90436](https://nvd.nist.gov/vuln/detail/CVE-2026-90436) | Apache Axis | 0.011 | 66.9% | ❌ missed |
@@ -23,8 +27,7 @@ Every day, this repo checks what EPSS said about each newly confirmed exploited 
 | 2026-11-09 | [CVE-2026-116779](https://nvd.nist.gov/vuln/detail/CVE-2026-116779) | SignalWire FreeSwitch | 0.013 | 70.6% | ❌ missed |
 | 2026-11-09 | [CVE-2026-123158](https://nvd.nist.gov/vuln/detail/CVE-2026-123158) | OpenBSD OpenSSH | 0.010 | 63.5% | ❌ missed |
 | 2026-11-09 | [CVE-2026-123218](https://nvd.nist.gov/vuln/detail/CVE-2026-123218) | IBM Aspera Faspex | 0.004 | 34.1% | ❌ missed |
-| 2026-11-06 | [CVE-2026-19868](https://nvd.nist.gov/vuln/detail/CVE-2026-19868) | SonicWall SonicOS SSLVPN | not scored | – | – |
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-11-19 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
+Updated 2026-11-20 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).

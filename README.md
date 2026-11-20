@@ -11,22 +11,22 @@ Most teams pick a rule like "only CRITICAL" or "EPSS above 0.1" and hope. This t
 <!-- kev-watch:start -->
 ## 🔴 KEV Watch (updates daily)
 
-**13 of 14** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
+**16 of 17** vulnerabilities CISA confirmed as exploited in the last 14 days had an EPSS score under 0.1 the day before, so an "EPSS ≥ 0.1" filter would not have flagged them.
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
+| 2026-11-20 | [CVE-2025-42884](https://nvd.nist.gov/vuln/detail/CVE-2025-42884) | SAP NetWeaver | 0.003 | 20.4% | ❌ missed |
+| 2026-11-20 | [CVE-2026-123890](https://nvd.nist.gov/vuln/detail/CVE-2026-123890) | Broadcom VMware vCenter | not scored | – | – |
+| 2026-11-20 | [CVE-2026-129448](https://nvd.nist.gov/vuln/detail/CVE-2026-129448) | Apache Roller | 0.012 | 68.6% | ❌ missed |
+| 2026-11-20 | [CVE-2026-76466](https://nvd.nist.gov/vuln/detail/CVE-2026-76466) | Cisco Expressway Series | 0.004 | 36.7% | ❌ missed |
 | 2026-11-18 | [CVE-2024-10441](https://nvd.nist.gov/vuln/detail/CVE-2024-10441) | Synology DiskStation Manager (DSM) | 0.013 | 69.9% | ❌ missed |
 | 2026-11-18 | [CVE-2026-40217](https://nvd.nist.gov/vuln/detail/CVE-2026-40217) | BerriAI LiteLLM | 0.170 | 97.1% | ✅ flagged |
 | 2026-11-18 | [CVE-2026-90436](https://nvd.nist.gov/vuln/detail/CVE-2026-90436) | Apache Axis | 0.011 | 66.9% | ❌ missed |
 | 2026-11-18 | [CVE-2026-90817](https://nvd.nist.gov/vuln/detail/CVE-2026-90817) | Vanderbilt University Research Electronic Data Capture (REDCap) | 0.037 | 90.1% | ❌ missed |
-| 2026-11-17 | [CVE-2026-115731](https://nvd.nist.gov/vuln/detail/CVE-2026-115731) | Perforce Puppet Enterprise | 0.004 | 30.9% | ❌ missed |
-| 2026-11-13 | [CVE-2026-114713](https://nvd.nist.gov/vuln/detail/CVE-2026-114713) | UnrealIRCd UnrealIRCd | 0.003 | 23.3% | ❌ missed |
-| 2026-11-13 | [CVE-2026-123039](https://nvd.nist.gov/vuln/detail/CVE-2026-123039) | Check Point Multiple Products | not scored | – | – |
-| 2026-11-10 | [CVE-2026-111560](https://nvd.nist.gov/vuln/detail/CVE-2026-111560) | Barracuda Networks Multiple Products | 0.011 | 64.8% | ❌ missed |
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-11-19 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
+Updated 2026-11-20 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/). [Full list →](KEV-WATCH.md)
 <!-- kev-watch:end -->
 
 ## Results: 60 real days (Aug 17 – Oct 15, 2026)
