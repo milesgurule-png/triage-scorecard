@@ -6,6 +6,9 @@ Every day, this repo checks what EPSS said about each newly confirmed exploited 
 
 | Added to KEV | CVE | Vendor / product | EPSS day before | Percentile | EPSS ≥ 0.1? |
 |---|---|---|---:|---:|:---:|
+| 2026-11-27 | [CVE-2026-120705](https://nvd.nist.gov/vuln/detail/CVE-2026-120705) | OSGeo GeoServer | not scored | – | – |
+| 2026-11-27 | [CVE-2026-129243](https://nvd.nist.gov/vuln/detail/CVE-2026-129243) | OSGeo GeoServer | not scored | – | – |
+| 2026-11-27 | [CVE-2026-136716](https://nvd.nist.gov/vuln/detail/CVE-2026-136716) | Drupal Core | 0.010 | 62.3% | ❌ missed |
 | 2026-11-25 | [CVE-2023-25914](https://nvd.nist.gov/vuln/detail/CVE-2023-25914) | Danfoss AK-SM 800A Series | 0.008 | 57.8% | ❌ missed |
 | 2026-11-25 | [CVE-2023-25915](https://nvd.nist.gov/vuln/detail/CVE-2023-25915) | Danfoss AK-SM 800A Series | 0.010 | 64.7% | ❌ missed |
 | 2026-11-25 | [CVE-2025-41450](https://nvd.nist.gov/vuln/detail/CVE-2025-41450) | Danfoss AK-SM 800A Series | 0.010 | 62.4% | ❌ missed |
@@ -30,9 +33,7 @@ Every day, this repo checks what EPSS said about each newly confirmed exploited 
 | 2026-11-18 | [CVE-2026-90436](https://nvd.nist.gov/vuln/detail/CVE-2026-90436) | Apache Axis | 0.011 | 66.9% | ❌ missed |
 | 2026-11-18 | [CVE-2026-90817](https://nvd.nist.gov/vuln/detail/CVE-2026-90817) | Vanderbilt University Research Electronic Data Capture (REDCap) | 0.037 | 90.1% | ❌ missed |
 | 2026-11-17 | [CVE-2026-115731](https://nvd.nist.gov/vuln/detail/CVE-2026-115731) | Perforce Puppet Enterprise | 0.004 | 30.9% | ❌ missed |
-| 2026-11-13 | [CVE-2026-114713](https://nvd.nist.gov/vuln/detail/CVE-2026-114713) | UnrealIRCd UnrealIRCd | 0.003 | 23.3% | ❌ missed |
-| 2026-11-13 | [CVE-2026-123039](https://nvd.nist.gov/vuln/detail/CVE-2026-123039) | Check Point Multiple Products | not scored | – | – |
 
 "Not scored" means EPSS had no score for that CVE yet, which is common for brand-new CVEs and is its own blind spot.
 
-Updated 2026-11-26 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
+Updated 2026-11-27 from the [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) and [FIRST EPSS](https://www.first.org/epss/).
